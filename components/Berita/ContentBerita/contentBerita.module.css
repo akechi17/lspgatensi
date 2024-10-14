@@ -1,0 +1,97 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.image {
+  object-fit: cover;
+  margin: 20px 0 0;
+  /* margin: 15px; */
+}
+
+.content {
+  text-align: justify;
+  color: #171717;
+  padding-bottom: 20px;
+  margin: 50px 20px 10px;
+  line-height: 1.5;
+}
+
+.shareLinksTitle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.shareLinks {
+  width: 100%;
+  font-size: 30px;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 25px 0 10px;
+}
+
+.shareLogo {
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    margin: 45px 30px;
+  }
+
+  .date {
+    font-size: 1.3rem;
+  }
+
+  .title {
+    line-height: 1.3;
+  }
+
+  .content {
+    margin: 20px;
+    line-height: 1.5;
+  }
+  .shareLinks {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1026px) {
+  .header {
+    max-width: 1024px;
+    margin: 45px auto;
+  }
+
+  .content {
+    max-width: 1024px;
+    margin: auto;
+    font-size: 1.3rem;
+  }
+
+  .content {
+    margin: 50px auto 100px;
+  }
+}
+
+@media screen and (min-width: 1321px) {
+  .header {
+    max-width: 1280px;
+    margin: 45px auto 80px;
+  }
+  .date {
+    font-size: 1.3rem;
+  }
+  .content {
+    max-width: 1280px;
+    font-size: 1.3rem;
+  }
+}

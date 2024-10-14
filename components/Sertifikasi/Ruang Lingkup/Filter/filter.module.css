@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  gap: 25px;
+  margin: 20px auto 40px;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.select {
+  width: 240px;
+  height: max-content;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 10px;
+}
+
+.select option {
+  margin: 10px 0;
+}

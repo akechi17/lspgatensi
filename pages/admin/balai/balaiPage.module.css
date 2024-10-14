@@ -1,0 +1,62 @@
+.wrapper {
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1280px;
+}
+
+.table {
+  border: 1px solid slategray;
+  width: 100%;
+}
+
+.table td,
+.table th {
+  padding: 3px 12px;
+}
+
+.table th {
+  background-color: rgb(120, 120, 232);
+}
+
+.table th {
+  text-align: center;
+  color: white;
+}
+
+.table tr:nth-child(odd) {
+  background-color: white;
+}
+
+.table tr:nth-child(even) {
+  background-color: rgba(128, 128, 128, 0.151);
+}
+.table tr:hover {
+  background-color: rgba(84, 84, 84, 0.45);
+  color: white;
+}
+.paginationWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.pagination {
+  display: flex;
+  list-style-type: none;
+  overflow: scroll;
+  padding: 0px;
+  margin-top: 0px;
+}
+
+.linkSertif {
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  margin: auto;
+}
+
+.linkSertif:hover {
+  background-color: rgb(190, 4, 4);
+  color: rgb(216, 195, 195) !important;
+}

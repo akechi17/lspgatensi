@@ -1,0 +1,31 @@
+.container {
+  margin: 100px 10px;
+}
+
+.title {
+  margin: 110px 0 50px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    margin: 130px 0 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .title {
+    margin: 130px 0 65px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    margin: 130px auto;
+    max-width: 1400px;
+  }
+  .title {
+    margin: 150px 0 80px;
+    font-size: 60px;
+  }
+}

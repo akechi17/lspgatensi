@@ -1,0 +1,136 @@
+.container {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.partnerTitle {
+  margin-bottom: 50px;
+  line-height: 1;
+}
+/* span {
+      font-size: 16px;
+      font-weight: 400;
+      color: white;
+    } */
+.captionH3 {
+  font-size: 15px;
+  margin: 10px 0 0 0;
+  text-align: center;
+  color: #0c0c79;
+  letter-spacing: 0.06rem;
+  padding: 1px 40px;
+}
+
+.captionH2 {
+  font-size: 35px;
+  margin: 10px 0 0 0;
+  text-align: center;
+  color: #0c0c79;
+  letter-spacing: 0.06rem;
+  padding: 1px 40px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-bottom: 100px;
+  }
+
+  .partnerTitle {
+    margin-bottom: 70px;
+  }
+
+  .captionH3 {
+    font-size: 20px;
+  }
+
+  .captionH2 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1400px) {
+  .captionH3 {
+    font-size: 18px;
+  }
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  padding: 30px 0px;
+}
+.logoScroll {
+  width: max-content;
+  white-space: nowrap;
+}
+.leftToRightt {
+  animation: leftToRight 25s infinite linear;
+}
+
+.image {
+  padding-left: 50px;
+  height: 43px;
+  width: auto;
+}
+@keyframes leftToRight {
+  from {
+    transform: translateX(-0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* .partner-list {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+    min-height: 150px;
+    .partner-item {
+      img {
+        height: 100%;
+        width: 150%;
+        max-width: 300px;
+      }
+  
+      a img.bnsp {
+        width: 250px;
+      }
+      a {
+        display: block;
+        text-align: center;
+        position: relative;
+        margin-bottom: 30px;
+      }
+      &:nth-child(6) {
+        margin-left: 10%;
+      }
+    }
+  }
+  .partner-shape {
+    position: absolute;
+    top: -6%;
+    left: 0%;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    -webkit-animation: movebounce 5s linear infinite;
+    animation: movebounce 5s linear infinite;
+  }
+  .partner-shape-img1 {
+    position: absolute;
+    right: 0%;
+    bottom: -6%;
+    z-index: -1;
+    -webkit-animation: movebounce 5s linear infinite;
+    animation: movebounce 5s linear infinite;
+  } */

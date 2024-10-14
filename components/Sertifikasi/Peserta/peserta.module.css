@@ -1,0 +1,140 @@
+.wrapper {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1280px;
+  padding: 10px;
+}
+
+.title {
+  text-align: center;
+}
+
+.filter {
+  margin: 5px 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.filter label {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px auto 20px;
+}
+
+.filter input {
+  padding: 5px 10px;
+  margin: 10px auto 20px;
+  border-radius: 7px;
+  width: 70vw;
+}
+
+.searchButton {
+  width: max-content;
+  margin: 10px auto 0;
+  border: none;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+}
+
+.table {
+  border: 1px solid slategray;
+  width: 100%;
+}
+
+.table td,
+.table th {
+  padding: 3px 12px;
+}
+
+.table th {
+  background-color: rgb(120, 120, 232);
+}
+
+.table th {
+  text-align: center;
+  color: white;
+}
+
+.table tr:nth-child(odd) {
+  background-color: white;
+}
+
+.table tr:nth-child(even) {
+  background-color: rgba(128, 128, 128, 0.151);
+}
+
+.table tr:hover {
+  background-color: rgba(84, 84, 84, 0.45);
+  color: white;
+}
+
+.paginationWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.pagination {
+  display: flex;
+  list-style-type: none;
+  overflow: scroll;
+  padding: 0px;
+  margin-top: 0px;
+}
+
+.linkSertif {
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  margin: auto;
+}
+
+.linkSertif:hover {
+  background-color: rgb(190, 4, 4);
+  color: rgb(216, 195, 195) !important;
+}
+
+@media screen and (max-width: 768px) {
+  .nik {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .filter label input {
+    width: 60vw;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .filter input {
+    max-width: 290px;
+  }
+  .table {
+    width: 530px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    margin-top: 40px;
+  }
+  .filter input {
+    max-width: 250px;
+  }
+  .table {
+    /* width: 90vw; */
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .title {
+    margin: 50px 0 30px;
+  }
+}

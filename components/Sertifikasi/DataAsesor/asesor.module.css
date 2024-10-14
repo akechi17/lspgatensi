@@ -1,0 +1,147 @@
+.container {
+  padding: 100px 10px;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.title {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.filter {
+  margin: 5px auto 40px;
+  min-width: 88vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 0;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.filter > * {
+  width: max-content;
+  margin: 20px auto;
+}
+
+.filter label {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 5px auto 15px;
+}
+
+.filter input {
+  width: 90%;
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+
+.filter button {
+  padding: 5px 15px;
+  margin-top: 15px;
+  border-radius: 5px;
+  background-color: rgb(50, 84, 255);
+  color: white;
+  border-color: transparent;
+}
+
+/* .filter label input {
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 7px;
+} */
+
+.jumlahSKK {
+  margin: 5px auto 15px;
+  font-weight: bold;
+}
+
+.table {
+  margin: auto;
+}
+
+.head {
+  color: white;
+  background-color: #00005e;
+  text-align: center;
+}
+.headCell {
+  padding: 10px 5px;
+}
+
+.rowCell {
+  padding: 10px 3px;
+}
+
+.cell:nth-child(odd) {
+  background-color: white;
+}
+
+.cell:nth-child(even) {
+  background-color: rgba(128, 128, 128, 0.151);
+}
+
+.cell:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+  color: white;
+}
+
+.centerItem {
+  text-align: center;
+}
+
+.subklas {
+  min-width: 199px;
+  height: 68px;
+}
+
+@media screen and (max-width: 425px) {
+  .filter label,
+  .filter input {
+    width: 60vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .table {
+    min-width: 80vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .table,
+  .filter {
+    min-width: 80vw;
+  }
+  .filter input {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .table,
+  .filter {
+    min-width: 50vw;
+  }
+  .filter input {
+    width: 30vw;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .filter {
+    min-width: 40vw;
+  }
+  .filter input {
+    width: 20vw;
+    margin: 30px auto;
+  }
+  .table {
+    min-width: 60vw;
+  }
+}

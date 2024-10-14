@@ -1,0 +1,54 @@
+.wrapper {
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1280px;
+}
+
+.title {
+  text-align: center;
+  margin: 70px 0px 70px;
+  color: red;
+}
+
+.table {
+  background-color: #ffffff;
+  border-radius: 7px;
+  width: max-content;
+  margin: 50px auto;
+}
+
+.table tbody tr td {
+  padding: 30px 20px;
+  font-size: 20px;
+}
+
+.formWrapper {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin: 40px;
+}
+
+.button {
+  width: max-content;
+  margin: 20px 0 0;
+  padding: 10px 30px;
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.cancelButton {
+  width: max-content;
+  margin: 20px 0 0;
+  padding: 10px 30px;
+  background-color: white;
+  color: crimson;
+  border-radius: 5px;
+  border: 1px solid crimson;
+  font-size: 20px;
+}

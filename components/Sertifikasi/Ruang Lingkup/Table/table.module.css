@@ -1,0 +1,82 @@
+.table {
+  max-width: 1400px;
+  /* border: 1px solid black; */
+  margin: auto;
+}
+
+.head {
+  color: white;
+  background-color: #00005e;
+  text-align: center;
+}
+.headCell {
+  padding: 10px 5px;
+}
+
+.noData {
+  background-color: #fff;
+}
+
+.cell:nth-child(odd) {
+  background-color: white;
+}
+
+.cell:nth-child(even) {
+  background-color: rgba(128, 128, 128, 0.151);
+}
+
+.cell:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+  color: white;
+}
+
+.rowCell {
+  padding: 10px 3px;
+}
+
+.centerItem {
+  text-align: center;
+}
+
+.subklas {
+  min-width: 120px;
+  height: 68px;
+}
+
+.skema {
+  min-width: 100px;
+}
+
+.link {
+  background-color: rgba(0, 0, 255);
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.link:hover {
+  background-color: rgba(0, 0, 255, 0.611);
+  color: white !important;
+}
+
+@media screen and (max-width: 767px) {
+  .headCell:nth-child(3),
+  .headCell:nth-child(4),
+  .headCell:nth-child(5),
+  .rowCell:nth-child(3),
+  .rowCell:nth-child(4),
+  .rowCell:nth-child(5) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .table {
+    min-width: 850px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .table {
+    min-width: 1000px;
+  }
+}

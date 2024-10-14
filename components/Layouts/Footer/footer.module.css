@@ -1,0 +1,178 @@
+.footerBox {
+  background-color: #291e43;
+  /* // border-top-left-radius: 30px; */
+  /* // border-top-right-radius: 30px; */
+  padding: 65px 25px 25px 25px;
+}
+
+.footerBox h3 {
+  font-size: 25px;
+  color: #f7f7ff;
+  letter-spacing: 0.15rem;
+}
+
+.footerBox p {
+  font-size: 13px;
+  color: #d8d8ff;
+  letter-spacing: 0.05rem;
+  margin: 25px 0;
+}
+
+.footerBox .roww {
+  display: grid;
+  grid-template-columns: 285px;
+  padding-bottom: 20px;
+  width: max-content;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.footerBox .roww .column {
+  padding-bottom: 10px;
+}
+
+.column a :hover {
+  color: white;
+}
+
+.mediaIcon {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.mediaIcon a {
+  display: flex;
+  align-items: center;
+}
+.roww a,
+.roww a p {
+  color: #9a9bc6;
+}
+
+.roww a p:visited {
+  color: #9a9bc6;
+}
+
+/* .roww a p:hover {
+  color: white;
+} */
+
+.roww a i {
+  font-size: 25px;
+  padding: 0 18px 0 0;
+  color: #9a9bc6;
+}
+.link {
+  font-size: 15px;
+}
+
+.link:hover,
+.link:hover i {
+  color: white !important;
+}
+
+.alamat {
+  margin-top: 40px;
+}
+
+/* .map iframe {
+  width: 70vw;
+  height: 200px;
+} */
+
+.medSos {
+  margin-top: 50px;
+}
+
+.last {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.copyright {
+  text-align: center;
+  color: white;
+  background-color: #1f1731;
+  padding: 10px 50px 90px;
+  font-size: 11px;
+  letter-spacing: 0.15rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footerBox {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 65px 12vw 25px;
+  }
+
+  .footerBox h3 {
+    text-align: start;
+  }
+
+  .roww {
+    display: flex;
+    width: 50%;
+    margin: 0;
+    gap: 2vw;
+  }
+
+  .column {
+    padding: 0;
+  }
+
+  .link i {
+    font-size: 25px;
+  }
+
+  .alamat {
+    margin-top: 10px;
+  }
+
+  .copyright {
+    padding: 20px 20px 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footerBox {
+    /* gap: 80px; */
+    padding: 65px 20px 25px;
+  }
+  .roww {
+    grid-template-columns: 200px 240px !important;
+    /* gap: 80px; */
+  }
+
+  .alamat {
+    margin-top: 0px;
+  }
+
+  .footerBox .roww {
+    margin: 0;
+  }
+
+  .copyright {
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .roww {
+    grid-template-columns: 285px 285px !important;
+  }
+
+  .alamat {
+    margin-top: 0px;
+  }
+
+  .column a * {
+    font-size: 15px;
+  }
+  .link,
+  .link i {
+    font-size: 17px;
+  }
+}

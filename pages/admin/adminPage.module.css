@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.menuWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.menu {
+  border: 1px solid #150b0b32;
+  border-radius: 5px;
+  padding: 50px 0;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #393953;
+  background-color: #0000ff07;
+}
+
+.menu:hover {
+  color: black !important;
+  background-color: white;
+}
+
+.menuDisabled {
+  cursor: not-allowed;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 25px 12vw;
+  }
+}

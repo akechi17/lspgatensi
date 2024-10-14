@@ -1,0 +1,139 @@
+.container {
+  margin-top: 70px;
+  padding: 15px;
+}
+
+.title {
+  text-align: center;
+  margin: 5px 0 25px;
+}
+
+.option {
+  border: blue 1px solid;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.optionTitle {
+  margin: 20px 10px;
+}
+
+.option ol {
+  margin: 10px;
+}
+.option li {
+  margin-bottom: 10px;
+}
+
+.option p {
+  padding: 10px;
+  margin: auto 10px 0;
+}
+
+.buttonWrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+.buttonWrapper div {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+.button {
+  width: max-content;
+  margin: 20px auto;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 25px;
+}
+
+.button:hover {
+  background-color: #0000ffb5;
+  /* background-color: blue; */
+  color: white !important;
+}
+
+.imageWrapper {
+  padding: 70px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    margin: 30px 0 40px;
+  }
+  .optionWrapper {
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    margin: auto;
+    justify-content: center;
+    gap: 5vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .optionWrapper {
+    grid-template-columns: 400px 400px;
+    gap: 5vw;
+  }
+  .option {
+    border-radius: 22px;
+  }
+  .image {
+    width: 80vw;
+    max-width: 1000px;
+  }
+  .buttonWrapper div {
+    display: block;
+  }
+  .button {
+    margin: 10px;
+    padding: 7px 10px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* .image {
+    max-width: 1500px;
+  } */
+  .title {
+    font-size: 50px;
+    margin: 60px;
+  }
+  .optionWrapper {
+    grid-template-columns: 600px 600px;
+    margin: 80px auto 100px;
+  }
+  .option {
+    border-radius: 33px;
+  }
+  .optionTitle {
+    font-size: 40px;
+  }
+  .option ol {
+    height: 550px;
+  }
+  .option ol li,
+  .option p {
+    font-size: 20px;
+  }
+  .buttonWrapper {
+    font-size: 25px;
+  }
+  .button {
+    font-size: 25px;
+    padding: 7px 20px;
+  }
+}

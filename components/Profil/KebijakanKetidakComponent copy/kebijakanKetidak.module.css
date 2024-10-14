@@ -1,0 +1,23 @@
+.container {
+  margin-top: 70px;
+}
+
+.imageWrapper {
+  padding: 70px 10px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .image {
+    width: 80vw;
+    max-width: 1000px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .image {
+    max-width: 1500px;
+  }
+}

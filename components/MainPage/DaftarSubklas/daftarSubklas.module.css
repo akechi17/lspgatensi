@@ -1,0 +1,262 @@
+.servicesSection {
+  padding: 10px 10px 50px;
+  margin: 30px auto;
+  max-width: 768px;
+}
+
+.header {
+  margin-bottom: 50px;
+  line-height: 1;
+  margin: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.headerTitle {
+  color: #0c0c79;
+  margin: 20px 0 20px;
+  font-size: 40px;
+  letter-spacing: -2px;
+  /* text-align: center; */
+  letter-spacing: 0.8px;
+}
+
+.seperateDesc {
+  margin: 40px 0 0;
+}
+
+.caption {
+  /* max-width: 740px; */
+  font-size: 17px;
+  font-weight: 400;
+  margin: 7px 0 20px;
+  line-height: 1.4;
+  color: #0c0c79;
+  letter-spacing: 0.8px;
+  /* text-align: center; */
+}
+
+.boldCaption {
+  font-size: 20px;
+}
+
+.lowerCaption {
+  margin: 10px 0;
+  padding-bottom: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(12 12 121 / 65%);
+  line-height: 1.4;
+  letter-spacing: 0.8px;
+}
+/* h1 {
+  padding-top: 10px;
+}
+img {
+  padding-bottom: 30px;
+} */
+
+.jabker {
+  display: grid;
+  grid-template-columns: auto;
+}
+.jabker * {
+  width: 100%;
+}
+
+.singleServicesBox {
+  display: grid;
+  grid-template-columns: auto 50px;
+  justify-content: space-between;
+  min-height: 151px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
+  background-color: #fff;
+  transition: 0.6s;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 25px 0px 25px 0px;
+  padding: 35px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.jabkerTitle {
+  padding-right: 10px;
+}
+
+.image {
+  margin: 0px auto;
+}
+
+.jabkerTitle {
+  margin-bottom: 0;
+  transition: 0.6s;
+  font-size: 20px;
+  color: #0b0b84;
+}
+/* a {
+        display: inline-block;
+      } */
+
+/* p {
+      font-size: 14px;
+      transition: 0.6s;
+      margin-top: 15px;
+      margin-bottom: 0;
+    } */
+.serviceBtn {
+  margin-top: auto;
+  display: inline-block;
+  font-size: 11px;
+  color: #ea00009c;
+  font-weight: 400;
+  transition: 0.6s;
+}
+.serviceBtn > i {
+  position: relative;
+  transition: 0.6s;
+  color: #ea00009c;
+  top: 1px;
+  margin-left: 5px;
+}
+.serviceBtn > i::before {
+  font-size: 14px;
+}
+.singleServicesBox::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: 0%;
+  background: #2c3482;
+  border-radius: 25px 0 25px 0;
+  transition: 0.4s;
+}
+.singleServicesBox:hover {
+  transform: translateY(-10px);
+}
+.singleServicesBox:hover::before {
+  height: 100%;
+}
+.singleServicesBox:hover.icon {
+  transform: rotate(360deg);
+  color: #2c3482;
+  background-color: #fff;
+}
+.singleServicesBox:hover .jabkerTitle {
+  color: #fff;
+
+  /* a {
+          color: #fff;
+        } */
+}
+/* p {
+        color: #fff;
+      } */
+.singleServicesBox:hover .serviceBtn {
+  color: white;
+  letter-spacing: 1px;
+}
+.singleServicesBox:hover > .serviceBtn > i {
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .headerTitle {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .seperateDesc {
+    margin-top: 60px;
+  }
+
+  .jabker {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 15px;
+  }
+  .singleServicesBox {
+    min-height: 180px;
+  }
+  .jabkerTitle {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .servicesSection {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .jabker {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    /* display: flex ;  */
+  }
+
+  .header {
+    margin: 40px 0;
+  }
+
+  .seperateDesc {
+    /* display: flex;
+    justify-content: space-between; */
+    margin-top: 40px;
+  }
+  /* p {
+      font-size: 15px ;
+      text-align: left;
+    } */
+
+  .lowerCaption {
+    margin-top: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    margin: 20px 0 80px;
+  }
+
+  .headerTitle {
+    font-size: 50px;
+  }
+
+  .caption {
+    max-width: 1050px;
+    font-size: 23px;
+    margin: 10px auto 30px;
+  }
+  .boldCaption {
+    font-size: 28px;
+  }
+  .lowerCaption {
+    font-size: 18px;
+    margin-top: auto;
+    margin-bottom: 30px;
+  }
+
+  .singleServicesBox {
+    flex: 1;
+    min-height: 200px;
+  }
+  .servicesSection {
+    /* margin: 0 10px; */
+    max-width: 1480px;
+    margin: auto;
+  }
+  .jabkerTitle {
+    font-size: 25px;
+  }
+  .serviceBtn {
+    font-size: 18px;
+  }
+}

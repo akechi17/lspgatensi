@@ -1,0 +1,79 @@
+.container {
+  padding: 70px 10px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.linkKeluhan {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 70px;
+}
+
+.map {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.isiBanding {
+  padding: 1px 10px;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.title {
+  margin: 60px 0;
+  text-align: center;
+  font-size: 35px;
+}
+.containerIsi {
+  margin: 50px 0;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.link span {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 20px;
+  width: max-content;
+  border-radius: 5px;
+  margin: auto;
+  background-color: rgba(30, 30, 132, 0.8);
+  color: white;
+  font-size: 18px;
+}
+
+.button:hover {
+  background-color: rgba(30, 30, 132, 1);
+  color: white !important;
+}
+
+@media (min-width: 1024px) {
+  .isiBanding {
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .title {
+    font-size: 45px;
+  }
+  .containerIsi h2 {
+    font-size: 40px;
+  }
+  .containerIsi ul li {
+    font-size: 20px;
+  }
+  .link {
+    font-size: 20px;
+  }
+}
