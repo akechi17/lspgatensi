@@ -29,8 +29,8 @@ export default function Footer() {
           <div className={styles.column}>
             <h3 className={styles.subtitle}>Kontak Kami</h3>
             <p className={styles.details}>Email</p>
-            <Link href="mailto:rindadwi@lspgatensi.id">
-              <p>rindadwi@lspgatensi.id</p>
+            <Link href="mailto:bunga@lspgatensi.id">
+              <p>bunga@lspgatensi.id</p>
             </Link>
             <Link href="mailto:cs@lspgatensi.id">
               <p>cs@lspgatensi.id</p>
