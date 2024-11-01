@@ -15,22 +15,39 @@ import WaButton from "../components/Shared/WaButton";
 import AuthProvider from "../providers/AuthProvider";
 import Footer from "../components/Layouts/Footer/Footer";
 
+import Router from "next/router";
+import { initGA, logPageView } from "../lib/ga";
+
 export default class MyApp extends App {
-  // Preloader
   state = {
     loading: true,
   };
+
   componentDidMount() {
     this.timerHandle = setTimeout(
       () => this.setState({ loading: false }),
       2000
     );
+
+    // Initialize Google Analytics if the measurement ID is available
+    const measurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+    if (measurementId) {
+      initGA(measurementId);
+      logPageView(window.location.pathname);
+
+      // Track page views on route change
+      Router.events.on("routeChangeComplete", logPageView);
+    }
   }
+
   componentWillUnmount() {
     if (this.timerHandle) {
       clearTimeout(this.timerHandle);
       this.timerHandle = 0;
     }
+
+    // Remove Google Analytics listener on component unmount
+    Router.events.off("routeChangeComplete", logPageView);
   }
 
   render() {
@@ -38,13 +55,8 @@ export default class MyApp extends App {
     return (
       <>
         <Head>
-          <meta charSet="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          {/* <meta
-            name="description"
-            content="LSP Gatensi Karya Konstruksi, LSP Konstruksi Lembaga Sertifikasi Profesi GATENSI gatensi GAPENSI gapensi Konstruksi organisasi asosiasi konstruksi gabungan tenaga ahli konstruksi nasional sipil sertifikasi profesi sertifikat bnsp portal perizinan pu pupr badan nasional sertifikasi profesi"
-          />
-          <title>LSP Gatensi Karya Konstruksi</title> */}
+          <meta charSet='utf-8' />
+          <meta name='viewport' content='width=device-width, initial-scale=1' />
         </Head>
         <AuthProvider>
           <Component {...pageProps} />
@@ -53,7 +65,7 @@ export default class MyApp extends App {
           <Loader loading={this.state.loading} />
 
           {/* Go Top Button */}
-          <GoTop scrollStepInPx="50" delayInMs="10.50" />
+          <GoTop scrollStepInPx='50' delayInMs='10.50' />
           <WaButton />
           <Footer />
         </AuthProvider>

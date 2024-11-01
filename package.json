@@ -31,6 +31,7 @@
     "react-animate-on-scroll": "^2.1.5",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
+    "react-ga4": "^2.1.0",
     "react-modal-video": "^1.2.8",
     "react-owl-carousel3": "^2.2.5",
     "react-share-kit": "^1.1.0",
